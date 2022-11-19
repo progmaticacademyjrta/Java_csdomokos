@@ -94,7 +94,7 @@ public class shoppingTerminal {
                 break;
         }
         System.out.println();
-        System.out.println("Kíván más teherautót is vásárolni? Ha igen, írja be 'IGEN', ha nem, akkor írja be 'NEM'.");
+        System.out.println("Kíván más teherautót is vásárolni? (IGEN/NEM).");
         scanner = new Scanner(System.in);
         String furtherShopping = scanner.nextLine();
         String pickTruck2 = null;
@@ -138,10 +138,10 @@ public class shoppingTerminal {
             System.out.println();
             System.out.println("Ugrás a fizetés oldalra");
         } else {
-            System.out.println("Vásárlás befejezve.");
+            System.out.println("Rendelés leadása befejezve.");
         }
 
-        System.out.println("Kívánja folytatni a vásárlást vagy szeretne kilépni?");
+        System.out.println("Kívánja folytatni a vásárlást?(IGEN/NEM)");
         String escShopping = scanner.nextLine();
         if (escShopping.equals("IGEN")) {
             System.out.println();

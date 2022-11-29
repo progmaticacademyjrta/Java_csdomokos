@@ -1,17 +1,17 @@
 import java.util.Scanner;
 
 public class CalculatorMethod {
+    
+    static String operator = "";
+    static int number1 = 0;
+    static int number2 = 0;
+    
     public static void main(String[] args) {
 
         getInputFromUser();
         int result = getCalculationResult(operator, number1, number2);
         showResultToUser(result);
     }
-
-    static String operator = "";
-    static int number1 = 0;
-    static int number2 = 0;
-
 
     public static void getInputFromUser (){
         Scanner scanner = new Scanner(System.in);
